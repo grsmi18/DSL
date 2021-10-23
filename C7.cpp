@@ -1,9 +1,9 @@
-ASSIGNMENT 6.
+/*ASSIGNMENT 6.
 Department of Computer Engineering has student's club named 'Pinnacle Club'.
 Students of Second, third and final year of department can be granted membership
 on request. Similarly one may cancel the membership of club. First node is reserved
 for president of club and last node is reserved for secretary of club. Write C++
-program to maintain club member‘s information using singly linked list. Store
+program to maintain club memberâ€˜s information using singly linked list. Store
 student PRN and Name. Write functions to
 a) Add and delete the members as well as president or even secretary.
 b) Compute total number of members of club
@@ -166,16 +166,16 @@ void list::insertBeg() {
 void list::display() {
 	temp = head;
 	cout<<"President: ";
-	cout<< temp -> prn<<" — "<<temp -> name<<" -> ";
+	cout<< temp -> prn<<" â€” "<<temp -> name<<" -> ";
 	if(temp -> next != NULL) {
 		temp = temp -> next;
 	}
 	while (temp -> next != NULL) {
-		cout<< temp -> prn<<" — "<<temp -> name<<" -> ";
+		cout<< temp -> prn<<" â€” "<<temp -> name<<" -> ";
 		temp = temp -> next;
 	}
 	cout<<"Secretary: ";
-	cout<< temp -> prn<<" — "<<temp -> name<<" -> ";
+	cout<< temp -> prn<<" â€” "<<temp -> name<<" -> ";
 	cout<<"NULL"<<endl;
 }
 
@@ -311,11 +311,11 @@ void list::rev(node *t) {
 		rev (t -> next);
 	}
 	if(t == head)
-		cout<<"Secretary: "<<t -> prn<<" — "<<t -> name<<endl;
+		cout<<"Secretary: "<<t -> prn<<" â€” "<<t -> name<<endl;
 	else if(t -> next == NULL)
-		cout<<"President: "<<t -> prn<<" — "<<t -> name<<" -> ";
+		cout<<"President: "<<t -> prn<<" â€” "<<t -> name<<" -> ";
 	else
-		cout<<"Member: "<<t -> prn<<" — "<<t -> name<<" -> ";
+		cout<<"Member: "<<t -> prn<<" â€” "<<t -> name<<" -> ";
 }
 
 //Reverse
